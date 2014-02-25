@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{D88C5183-25A1-4482-B31D-FD57CA6F473D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GUI", "GUI", "{98D39CD2-07A1-4B48-AC1A-3BF35FAE78CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIB", "LIB", "{6CF2D0D5-D41E-4542-B2E7-E29F8A805DBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "txcrdwrppr", "DLL\txcrdwrppr\txcrdwrppr.vcproj", "{D77B987E-F100-4A26-B032-30196A2347E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Headers", "Headers", "{3D9B8583-1310-46D7-B0A0-7089CF22BF75}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Tx Static Libs\includes\defines.h = ..\..\Tx Static Libs\includes\defines.h
+		..\..\Tx Solutions\Tx Libraries\includes\defines.h = ..\..\Tx Solutions\Tx Libraries\includes\defines.h
+		C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\SCardErr.h = C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\SCardErr.h
+		C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\WinSCard.h = C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\WinSCard.h
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication", "GUI\WindowsFormsApplication\WindowsFormsApplication.csproj", "{1796C7DD-9865-487D-A552-686E84481140}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "txhelperslib", "..\Tx Solutions\Tx Libraries\TxHelpers lib\txhelperslib.vcproj", "{06946132-0964-4C35-96D5-B703A7528593}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "output", "output", "{62A154BF-BDAB-4E0F-B5EA-EB0EDEE9F17A}"
+	ProjectSection(SolutionItems) = preProject
+		C:\txlog.txt = C:\txlog.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "txmifare", "..\Tx Solutions\Tx Libraries\TxMifare lib\txmifare.vcproj", "{93D34594-B454-4EED-9F49-DC233D6142B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Debug|Win32.Build.0 = Debug|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Release|Win32.ActiveCfg = Release|Win32
+		{D77B987E-F100-4A26-B032-30196A2347E1}.Release|Win32.Build.0 = Release|Win32
+		{1796C7DD-9865-487D-A552-686E84481140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1796C7DD-9865-487D-A552-686E84481140}.Release|Win32.ActiveCfg = Release|Any CPU
+		{06946132-0964-4C35-96D5-B703A7528593}.Debug|Any CPU.ActiveCfg = Debug|CExxxxB_EN (ARMV4I)
+		{06946132-0964-4C35-96D5-B703A7528593}.Debug|Mixed Platforms.ActiveCfg = Debug|CExxxxB_EN (ARMV4I)
+		{06946132-0964-4C35-96D5-B703A7528593}.Debug|Mixed Platforms.Build.0 = Debug|CExxxxB_EN (ARMV4I)
+		{06946132-0964-4C35-96D5-B703A7528593}.Debug|Mixed Platforms.Deploy.0 = Debug|CExxxxB_EN (ARMV4I)
+		{06946132-0964-4C35-96D5-B703A7528593}.Debug|Win32.ActiveCfg = Debug|Win32
+		{06946132-0964-4C35-96D5-B703A7528593}.Debug|Win32.Build.0 = Debug|Win32
+		{06946132-0964-4C35-96D5-B703A7528593}.Release|Any CPU.ActiveCfg = Release|CExxxxB_EN (ARMV4I)
+		{06946132-0964-4C35-96D5-B703A7528593}.Release|Mixed Platforms.ActiveCfg = Release|CExxxxB_EN (ARMV4I)
+		{06946132-0964-4C35-96D5-B703A7528593}.Release|Mixed Platforms.Build.0 = Release|CExxxxB_EN (ARMV4I)
+		{06946132-0964-4C35-96D5-B703A7528593}.Release|Mixed Platforms.Deploy.0 = Release|CExxxxB_EN (ARMV4I)
+		{06946132-0964-4C35-96D5-B703A7528593}.Release|Win32.ActiveCfg = Release|Win32
+		{06946132-0964-4C35-96D5-B703A7528593}.Release|Win32.Build.0 = Release|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Debug|Win32.Build.0 = Debug|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Release|Any CPU.ActiveCfg = Release|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Release|Win32.ActiveCfg = Release|Win32
+		{93D34594-B454-4EED-9F49-DC233D6142B7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D77B987E-F100-4A26-B032-30196A2347E1} = {D88C5183-25A1-4482-B31D-FD57CA6F473D}
+		{1796C7DD-9865-487D-A552-686E84481140} = {98D39CD2-07A1-4B48-AC1A-3BF35FAE78CA}
+		{06946132-0964-4C35-96D5-B703A7528593} = {6CF2D0D5-D41E-4542-B2E7-E29F8A805DBA}
+		{93D34594-B454-4EED-9F49-DC233D6142B7} = {6CF2D0D5-D41E-4542-B2E7-E29F8A805DBA}
+	EndGlobalSection
+EndGlobal
