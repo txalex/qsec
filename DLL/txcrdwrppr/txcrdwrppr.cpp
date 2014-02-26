@@ -535,12 +535,9 @@ TXCRDWRPPR_API DWORD ExtUpdateSectorTrailers(LPTSTR szReader, BYTE* baCurrentKey
 		{
 			// get sector trailer block #
 			if(i < 32)
-				iBlockNum = (i * MF_1K_NUM_BLOCKS_IN_SECTOR) + 3;
+				iBlockNum = (i * MF_1K_NUM_BLOCKS_IN_SECTOR) + MF_NUM_DATA_BLOCKS_LITTLE_SECTOR;
 			else
-			{
-				iBlockNum = (i * MF_1K_NUM_BLOCKS_IN_SECTOR) + 15 + 12*iBigSectorCntr;
-				iBigSectorCntr++;
-			}
+				iBlockNum = (i * MF_1K_NUM_BLOCKS_IN_SECTOR) + MF_NUM_DATA_BLOCKS_BIG_SECTOR + (12 * iBigSectorCntr++);	// still not sure how the '12' adds to the equation, but it works so...
 
 			// authenticate the sector trailer block  
 			if(SCARD_S_SUCCESS != (dwRet = MfAuth(pstPCSCInfo, iBlockNum, bAuthKey)))
